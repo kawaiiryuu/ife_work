@@ -103,8 +103,8 @@
             <li>排名2</li>
             <li>排名3</li>
         </ol>
+        <span>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</span>
         <table border="1">
-            <span>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</span>
             <thead>
                 <tr>
                     <th>表头</th>
@@ -167,7 +167,7 @@
                 <select name="city">
                     <option value="shanghai">上海</option>
                     <option value="wuhan">武汉</option>
-                    <option value="beijing"selected>北京</option>
+                    <option value="beijing" selected>北京</option>
                     <option value="changsha">长沙</option>
                     <option value="guangzhou">广州</option>
                 </select>
@@ -175,8 +175,8 @@
                 <label><input type="checkbox" name="interest" value="sport" />运动</label>
                 <label><input type="checkbox" name="interest" value="art" />艺术</label>
                 <label><input type="checkbox" name="interest" value="science" />科学</label>
-                <span>个人描述：</span>
-                <textarea name="intro" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+                <label for="desc">个人描述：</label>
+                <textarea id="desc" name="intro" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
                 <input type="submit" value="确认提交" />
             </p>
         </form>
