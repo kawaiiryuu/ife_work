@@ -13,9 +13,7 @@
 [任务详情](http://ife.baidu.com/task/detail?taskId=2)
 
 代码
-
 [html](https://github.com/kawaiiryuu/ife_work/blob/master/task2.html)
-
 [css](https://github.com/kawaiiryuu/ife_work/blob/master/task2.css)
 
 [效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task2.html)
