@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三：三栏式布局</title>
+    <style>
+        *{
+            font-family:"microsoft yahei";
+        }
+        #container,#left,#right,#center{
+            border:1px solid #999;
+            padding:20px;
+            box-sizing:border-box;
+            word-wrap:break-word;
+        }
+        #container{
+            background:#eee;
+            padding:20px 160px 20px 240px;
+            overflow:auto;
+            min-width:620px;
+        }
+        #center{
+            background:white;
+            float:left;
+            width:100%;
+        }
+        #left{
+            background:white;
+            width:200px;
+            float:left;
+            margin-left:-100%;
+            position:relative;
+            right:220px;
+        }
+        #right{
+            background:white;
+            width:120px;
+            float:left;
+            margin-left:-120px;
+            position:relative;
+            left:140px;
+        }
+        img{
+            width:80px;
+            height:80px;
+            border:1px solid #999;
+        }
+        img~img{
+            margin-top:20px;
+        }
+        .team{
+            position:absolute;
+            right:10px;
+            top:20px;
+        }
+        h2{
+            font-size:24px;
+        }
+        h3{
+            font-size:18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="center">
+            <h2>团队介绍</h2>
+            <p><strong>前端noob</strong>&nbsp是湖南大学土木工程学院的4个前端小白组成的弱渣团队（＃￣▽￣＃）</p>
+            <hr>
+            <h3>侯一伟</h3>
+            <p>
+                新手初到
+            </p>
+            <h3>罗熠</h3>
+            <p>
+                有算法和编程基础，但无前端技术基础
+            </p>
+            <h3>林桂龙</h3>
+            <p>
+                刚开始学HTML和CSS，对前端感兴趣
+            </p>
+            <h3>石金笛</h3>
+            <p>
+                java c python各懂一点，计算机考研党
+            </p>
+        </div>
+        <div id="left">
+            <img src="logo.jpg">
+            <div class="team">前端noob</div>
+        </div>
+        <div id="right">
+            <img src="1.jpg">
+            <img src="2.jpg">
+            <img src="3.jpg">
+            <img src="4.jpg">
+        </div>
+    </div>
+</body>
+</html>
