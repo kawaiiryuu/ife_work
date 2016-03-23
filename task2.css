@@ -14,6 +14,7 @@ article,aside{
     box-shadow:2px 2px 4px gray;
     margin:20px 20%;
     padding:25px 20px;
+    min-width:300px;
 }
 
 header{
@@ -98,6 +99,7 @@ article table{
 article thead{
     background:#333;
     color:white;
+    text-align:left;
 }
 
 article th,article td{
