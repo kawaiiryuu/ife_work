@@ -48,6 +48,10 @@ nav a{
     text-decoration:none;
 }
 
+nav a:hover{
+    color:gray;
+}
+
 /* 内容 */
 article h3{
     font-size:16px;
@@ -81,7 +85,7 @@ article figure{
 }
 
 article figure img{
-    width:200px;
+    width:100%;
     margin-top:10px;
 }
 
