@@ -1,4 +1,4 @@
-body{
+﻿body{
     font-family:"microsoft yahei";
     background:#dedede;
     margin:0;
@@ -66,6 +66,7 @@ article h3{
 
 article p{
     text-indent:2em;
+    line-height:2em;
 }
 
 article ul{
