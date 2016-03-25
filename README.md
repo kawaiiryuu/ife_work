@@ -28,3 +28,21 @@
 
 [效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task3.html)
 
+#### 任务四：定位和居中问题
+
+[任务详情](http://ife.baidu.com/task/detail?taskId=4)
+
+代码: 
+[html](https://github.com/kawaiiryuu/ife_work/blob/master/task4.html)
+
+[效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task4.html)
+
+#### 任务五：零基础HTML及CSS编码（二）
+
+[任务详情](http://ife.baidu.com/task/detail?taskId=5)
+
+代码: 
+[html](https://github.com/kawaiiryuu/ife_work/blob/master/task5.html)
+[css](https://github.com/kawaiiryuu/ife_work/blob/master/task5.css)
+
+[效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task5.html)
