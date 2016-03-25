@@ -1,0 +1,211 @@
+﻿body{
+    font-family:"microsoft yahei";
+    background:#dedede;
+    margin:0;
+    min-width:680px;
+}
+
+h2{
+    font-size:20px;
+}
+
+article,aside{
+    background:white;
+    border:1px solid gray;
+    box-shadow:2px 2px 4px gray;
+    padding:25px 20px;
+    overflow:auto;
+    box-sizing:border-box;
+    margin:20px 30px;
+}
+
+aside{
+    width:340px;
+    float:right;
+}
+
+header{
+    background:#333;
+    padding:10px 5%;
+    position:relative;
+}
+
+.logo{
+    display:inline-block;
+}
+
+#content{
+    margin-right:370px;
+}
+
+/* 导航栏 */
+nav{
+    position:absolute;
+    top:50%;
+    right:5%;
+    transform:translateY(-50%);
+}
+
+nav ul{
+    margin:0;
+}
+
+nav li{
+    float:left;
+    margin:0 0 0 50px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:gray;
+}
+
+/* 内容 */
+article h3{
+    font-size:16px;
+    color:gray;
+}
+
+.info{
+    font-size:14px;
+    color:gray;
+}
+
+article p{
+    text-indent:2em;
+    line-height:2em;
+}
+
+article ul{
+    list-style:none;
+}
+
+article li{
+    margin:4px auto;
+}
+
+/* 插图 */
+article figure{
+    text-align:center;
+    width:200px;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    margin:10px;
+    padding:10px;
+    float:left;
+}
+
+article figure img{
+    width:100%;
+    margin-top:10px;
+}
+
+article>img{
+    width:90%;
+    max-width:500px;
+}
+
+/* 表格 */
+article table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+article thead{
+    background:#333;
+    color:white;
+    text-align:left;
+}
+
+article th,article td{
+    border:1px solid #ccc;
+    padding:4px;
+    font-size:14px;
+}
+
+article tfoot{
+    background:#ccc;
+}
+
+/* 侧边栏 */
+aside h2{
+    line-height:2em;
+    border-left:3px solid #ccc;
+    padding-left:0.5em;
+    margin:0;
+}
+
+/* 表单 */
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="radio"]+label,
+input[type="checkbox"]+label{
+    cursor:pointer;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label{
+    margin-left:-4px;
+}
+
+aside form{
+    font-size:14px;
+}
+
+.form-block{
+    margin:20px auto;
+    width:100%;
+}
+
+.form-left{
+    float:left;
+    text-align:right;
+    width:35%;
+}
+
+.form-right{
+    margin:10px 0 10px 35%;
+    padding-left:20px;
+}
+
+.form-right textarea{
+    font-size:16px;
+    width:85%;
+    resize:vertical;
+}
+
+.form-submit{
+    display:block;
+    width:100%;
+    height:40px;
+    background:#3355d0;
+    border-radius:5px;
+    border:none;
+    font-size:18px;
+    color:white;
+}
+
+.tips{
+    color:gray;
+}
+
+/* 页脚 */
+footer{
+    width:100%;
+    height:70px;
+    background:black;
+    color:white;
+    display:table;
+}
+
+footer p{
+    font-size:12px;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+}
