@@ -46,3 +46,13 @@
 [css](https://github.com/kawaiiryuu/ife_work/blob/master/task5.css)
 
 [效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task5.html)
+
+#### 任务六：通过HTML及CSS模拟报纸排版
+
+[任务详情](http://ife.baidu.com/task/detail?taskId=6)
+
+代码: 
+[html](https://github.com/kawaiiryuu/ife_work/blob/master/task6.html)
+[css](https://github.com/kawaiiryuu/ife_work/blob/master/task6.css)
+
+[效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task6.html)
