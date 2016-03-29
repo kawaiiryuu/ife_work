@@ -175,10 +175,12 @@ footer{
 #article-top ul{
     padding:4px;
     list-style-type:none;
+    font-family:"Microsoft YaHei";
 }
 #article-top ul span{
     color:#cd4a48;
     font-style:oblique;
+    opacity:0.7;
 }
 /* 左下文章 */
 #article-bottom-l{
