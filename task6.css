@@ -137,7 +137,6 @@ footer{
     margin-top:20px;
     color:#767777;
     font-size:12px;
-    font-family:"宋体";
 }
 #article-top div[class^="subsection"]~div[class^="subsection"]{
     margin-left:20px;
@@ -150,6 +149,7 @@ footer{
 }
 #article-top div[class^="subsection"] p{
     line-height:1.5em;
+    font-family:"宋体";
 }
 #article-top .subsection1{
     width:220px;
