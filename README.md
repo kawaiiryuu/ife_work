@@ -56,3 +56,14 @@
 [css](https://github.com/kawaiiryuu/ife_work/blob/master/task6.css)
 
 [效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task6.html)
+
+#### 任务十二：学习CSS 3的新特性
+
+[任务详情](http://ife.baidu.com/task/detail?taskId=12)
+
+代码: 
+[html](https://github.com/kawaiiryuu/ife_work/blob/master/task12/task12.html)
+[css](https://github.com/kawaiiryuu/ife_work/blob/master/task12/task12.css)
+[stylus](https://github.com/kawaiiryuu/ife_work/blob/master/task12/task12.styl)
+
+[效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task12/task12.html)
