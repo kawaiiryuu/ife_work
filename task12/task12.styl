@@ -1,0 +1,99 @@
+@keyframes SlideLeft
+    0%
+        margin-left 100%
+    100%
+        margin-left 0
+
+        
+text-center()
+    text-align center
+    line-height @height
+    vertical-align middle
+    
+pos-abs(t=0,l=0)
+    position absolute
+    top t
+    left l
+    
+
+body
+    font-size 16px
+    font-family "Microsoft Yahei"
+
+table
+    margin 30px 20px
+    th
+        text-align left
+        background black
+        color white
+    tr
+        for i in 1 2 3
+            &:nth-child({i})
+                color red
+        &:nth-child(2n)
+            background #CACACA
+        &:nth-child(2n+1)
+            background white
+            
+input[type="text"]
+    width 120px
+    transition width .8s ease .1s
+    &:focus
+        width 200px
+        border none
+        box-shadow blue 0 0 6px
+        
+.banner
+    padding 0
+    margin 30px
+    width 300px
+    height 150px
+    display flex
+    align-items flex-end
+    justify-content flex-end
+    position relative
+    
+    a
+        display inline-block
+        width 30px
+        height @width
+        color white
+        text-decoration none
+        margin 0 0 0 5px
+        background rgba(255,255,255,.3)
+        z-index 5
+        text-center()
+        
+        &:hover
+            background rgba(255,255,255,.5)
+    
+    .slider
+        width @width
+        height @height
+        overflow hidden
+        z-index 1
+        pos-abs()
+        
+    .slide
+        width @width
+        height @height
+        color white
+        font-size 40px
+        text-center()
+        pos-abs()
+        
+    #bg1
+        background red
+        
+    #bg2
+        background purple
+        
+    #bg3
+        background blue
+        
+    .slide:target
+        z-index 2
+        animation-name SlideLeft
+        animation-duration .8s
+        animation-timing-function ease
+        animation-fill-mode both
