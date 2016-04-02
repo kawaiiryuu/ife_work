@@ -1,10 +1,3 @@
-@keyframes SlideLeft
-    0%
-        margin-left 100%
-    100%
-        margin-left 0
-
-        
 text-center()
     text-align center
     line-height @height
@@ -35,16 +28,22 @@ table
         &:nth-child(2n+1)
             background white
             
-input[type="text"]
-    width 120px
-    transition width .8s ease .1s
-    &:focus
-        width 200px
-        border none
-        box-shadow blue 0 0 6px
+form
+    width 300px
+    
+    input[type="text"]
+        display block
+        margin 0 auto
+        width 120px
+        height 21px
+        box-sizing border-box
+        transition width .8s ease .1s
+        &:focus
+            width 200px
+            border none
+            box-shadow blue 0 0 6px
         
 .banner
-    padding 0
     margin 30px
     width 300px
     height 150px
@@ -52,6 +51,10 @@ input[type="text"]
     align-items flex-end
     justify-content flex-end
     position relative
+    overflow hidden
+    
+    dummy
+        visibility hidden
     
     a
         display inline-block
@@ -61,39 +64,35 @@ input[type="text"]
         text-decoration none
         margin 0 0 0 5px
         background rgba(255,255,255,.3)
-        z-index 5
+        z-index 1
         text-center()
         
         &:hover
             background rgba(255,255,255,.5)
     
     .slider
-        width @width
+        width @width*3
         height @height
-        overflow hidden
-        z-index 1
+        transition left 1s ease
         pos-abs()
         
     .slide
         width @width
         height @height
+        float left
         color white
         font-size 40px
         text-center()
-        pos-abs()
         
-    #bg1
+    .slide:nth-child(1)
         background red
         
-    #bg2
+    .slide:nth-child(2)
         background purple
         
-    #bg3
+    .slide:nth-child(3)
         background blue
         
-    .slide:target
-        z-index 2
-        animation-name SlideLeft
-        animation-duration .8s
-        animation-timing-function ease
-        animation-fill-mode both
+    for i in 1 2 3
+        #d{i}:target~.slider
+            left - @width*(i - 1)

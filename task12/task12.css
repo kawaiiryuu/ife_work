@@ -25,17 +25,23 @@ table tr:nth-child(2n) {
 table tr:nth-child(2n+1) {
   background: #fff;
 }
-input[type="text"] {
+form {
+  width: 300px;
+}
+form input[type="text"] {
+  display: block;
+  margin: 0 auto;
   width: 120px;
+  height: 21px;
+  box-sizing: border-box;
   transition: width 0.8s ease 0.1s;
 }
-input[type="text"]:focus {
+form input[type="text"]:focus {
   width: 200px;
   border: none;
   box-shadow: #00f 0 0 6px;
 }
 .banner {
-  padding: 0;
   margin: 30px;
   width: 300px;
   height: 150px;
@@ -43,6 +49,10 @@ input[type="text"]:focus {
   align-items: flex-end;
   justify-content: flex-end;
   position: relative;
+  overflow: hidden;
+}
+.banner dummy {
+  visibility: hidden;
 }
 .banner a {
   display: inline-block;
@@ -52,7 +62,7 @@ input[type="text"]:focus {
   text-decoration: none;
   margin: 0 0 0 5px;
   background: rgba(255,255,255,0.3);
-  z-index: 5;
+  z-index: 1;
   text-align: center;
   line-height: 30px;
   vertical-align: middle;
@@ -61,10 +71,9 @@ input[type="text"]:focus {
   background: rgba(255,255,255,0.5);
 }
 .banner .slider {
-  width: 300px;
+  width: 900px;
   height: 150px;
-  overflow: hidden;
-  z-index: 1;
+  transition: left 1s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -72,60 +81,28 @@ input[type="text"]:focus {
 .banner .slide {
   width: 300px;
   height: 150px;
+  float: left;
   color: #fff;
   font-size: 40px;
   text-align: center;
   line-height: 150px;
   vertical-align: middle;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-.banner #bg1 {
+.banner .slide:nth-child(1) {
   background: #f00;
 }
-.banner #bg2 {
+.banner .slide:nth-child(2) {
   background: #800080;
 }
-.banner #bg3 {
+.banner .slide:nth-child(3) {
   background: #00f;
 }
-.banner .slide:target {
-  z-index: 2;
-  animation-name: SlideLeft;
-  animation-duration: 0.8s;
-  animation-timing-function: ease;
-  animation-fill-mode: both;
+.banner #d1:target~.slider {
+  left: 0px;
 }
-@-moz-keyframes SlideLeft {
-  0% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 0;
-  }
+.banner #d2:target~.slider {
+  left: -300px;
 }
-@-webkit-keyframes SlideLeft {
-  0% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
-@-o-keyframes SlideLeft {
-  0% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
-@keyframes SlideLeft {
-  0% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 0;
-  }
+.banner #d3:target~.slider {
+  left: -600px;
 }
