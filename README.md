@@ -64,5 +64,6 @@
 代码: 
 [html](https://github.com/kawaiiryuu/ife_work/blob/master/task12/task12.html)
 [css](https://github.com/kawaiiryuu/ife_work/blob/master/task12/task12.css)
+[stylus](https://github.com/kawaiiryuu/ife_work/blob/master/task12/task12.styl)
 
 [效果](http://htmlpreview.github.io/?https://github.com/kawaiiryuu/ife_work/blob/master/task12/task12.html)
