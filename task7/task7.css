@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: "微软雅黑";
+}
+input {
+  font-family: "微软雅黑";
+}
+figure {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 60px;
+  overflow: auto;
+}
+header .logo {
+  float: left;
+  margin-left: 50px;
+  font-family: "黑体";
+  font-size: 21px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+}
+header img {
+  margin-top: -6px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  overflow: auto;
+}
+header nav li {
+  display: inline-block;
+  height: 60px;
+  float: left;
+  color: #7f7e7e;
+  box-sizing: border-box;
+}
+header nav li:hover {
+  color: #e74f4d;
+  border-bottom: 3px solid #e74f4d;
+}
+header nav li a {
+  display: block;
+  height: 60px;
+  padding: 0 20px;
+  color: inherit;
+  font-size: 14px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+}
+header nav li a img {
+  margin-right: 4px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+}
+#show .main {
+  height: 690px;
+  color: #fff;
+  background: url("image/show-bg.png");
+  background-size: cover;
+  position: relative;
+}
+#show .main .mask {
+  width: 100%;
+  height: 100%;
+  padding-top: 240px;
+  box-sizing: border-box;
+  background: rgba(3,0,0,0.2);
+}
+#show .main h1 {
+  margin: 0 0 40px 100px;
+  font-size: 60px;
+  line-height: 60px;
+}
+#show .main p {
+  font-size: 21px;
+  margin: 40px 0 80px 110px;
+}
+#show .main a {
+  display: block;
+  margin-left: 110px;
+  width: 320px;
+  height: 70px;
+  background: #e74f4d;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 70px;
+  vertical-align: middle;
+}
+#show .list {
+  width: 100%;
+  height: 210px;
+  overflow: auto;
+}
+#show .list li {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  height: 210px;
+  text-align: center;
+  position: relative;
+}
+#show .list li:before {
+  width: 2px;
+  height: 50px;
+  content: "";
+  background: #aba6a5;
+  position: absolute;
+  left: -1px;
+  top: 125px;
+}
+#show .list li:first-child:before {
+  display: none;
+}
+#show .list li img {
+  margin: 40px 0;
+}
+#show .list li div {
+  margin: 0 20px;
+  font-size: 14px;
+  font-family: "黑体";
+  color: #7f7e7e;
+}
+#activity .title {
+  height: 360px;
+  padding-top: 90px;
+  box-sizing: border-box;
+  background: #ededec;
+  text-align: center;
+}
+#activity .title h1 {
+  margin: 36px 0;
+  font-family: "黑体";
+  font-size: 54px;
+  color: rgba(33,33,33,0.5);
+}
+#activity .middle {
+  width: 100%;
+  height: 341px;
+  background: url("image/activity-bg.png");
+  background-size: cover;
+}
+#activity .middle .mask {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: rgba(170,52,51,0.2);
+  text-align: center;
+  color: #fff;
+  padding-top: 40px;
+}
+#activity .middle h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+#activity .middle hr {
+  width: 28px;
+  height: 2px;
+  border: none;
+  background: #fff;
+  margin-bottom: 20px;
+}
+#activity .middle p {
+  font-size: 12px;
+}
+#activity .middle form {
+  width: 100%;
+}
+#activity .middle form .select {
+  display: inline-block;
+  position: relative;
+}
+#activity .middle form input {
+  width: 236px;
+  height: 36px;
+  border: none;
+  margin: 40px 15px;
+}
+#activity .middle form .text-box {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  background: #fff url("image/red-arrow.png") no-repeat;
+  background-position: 208px center;
+}
+#activity .middle form .text-box:focus {
+  outline: none;
+  border: 1px solid #be4e48;
+}
+#activity .middle form .text-box:focus+ul {
+  visibility: visible;
+}
+#activity .middle form .button {
+  background: #be4e48;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+#activity .middle form ul {
+  background: #e3e3e4;
+  border: 1px solid #be4e48;
+  width: 236px;
+  box-sizing: border-box;
+  visibility: hidden;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  top: 76px;
+}
+#activity .middle form ul li {
+  list-style-type: none;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #aba5a4;
+  padding-left: 36px;
+  font-size: 12px;
+  text-align: left;
+  line-height: 30px;
+  vertical-align: middle;
+}
+#activity .middle form ul li:hover {
+  color: #fff;
+  background: #be4e48 url("image/check.png") no-repeat;
+  background-position: 10px center;
+}
+#activity .bottom {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background: #f7f7f7;
+}
+#activity .bottom figure {
+  height: 396px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+#activity .bottom figure~figure {
+  margin-left: 20px;
+}
+#activity .bottom figure:nth-child(2) {
+  flex-direction: column-reverse;
+}
+#activity .bottom figure:nth-child(2) figcaption div:first-child {
+  font-size: 24px;
+  margin: 0;
+}
+#activity .bottom figure img {
+  padding: 10px 6px;
+  border: 1px solid #e1dedc;
+  background: #fff;
+}
+#activity .bottom figure figcaption {
+  text-align: center;
+}
+#activity .bottom figure figcaption div:first-child {
+  font-family: "黑体";
+  font-size: 14px;
+  margin: 14px 0;
+}
+#activity .bottom figure figcaption div:last-child {
+  font-size: 12px;
+  color: #7f7773;
+}

@@ -1,0 +1,284 @@
+text-center(pos=center)
+    text-align pos
+    line-height @height
+    vertical-align middle
+    
+pos-abs(l=0,t=0)
+    position absolute
+    left l
+    top t
+    
+    
+body
+    margin 0
+    font-family "微软雅黑"
+    
+input
+    font-family "微软雅黑"
+    
+figure
+    margin 0
+    
+a
+    text-decoration none
+    
+h1,h2,h3
+    font-weight normal
+    margin 0
+    
+ul
+    margin 0
+    padding 0
+
+header
+    width 100%
+    height 60px
+    overflow auto
+    
+    .logo
+        float left
+        margin-left 50px
+        font-family "黑体"
+        font-size 21px
+        text-center()
+        
+    img
+        margin-top -6px
+        text-center()
+        
+    nav
+        float right
+        
+        ul
+            overflow auto
+        
+        li
+            display inline-block
+            height @height
+            float left
+            color #7f7e7e
+            box-sizing border-box
+                
+            &:hover
+                color #e74f4d
+                border-bottom 3px solid #e74f4d
+                
+            a
+                display block
+                height @height
+                padding 0 20px
+                color inherit
+                font-size 14px
+                text-center()
+            
+                img
+                    margin-right 4px
+                    text-center()
+    
+#show
+    .main
+        height 690px
+        color #fff
+        background url("image/show-bg.png")
+        background-size cover
+        position relative
+        
+        .mask
+            width 100%
+            height 100%
+            padding-top 240px
+            box-sizing border-box
+            background rgba(3,0,0,.2)
+            
+        h1
+            margin 0 0 40px 100px 
+            font-size 60px
+            line-height @font-size
+            
+        p
+            font-size 21px
+            margin 40px 0 80px 110px
+            
+        a
+            display block
+            margin-left 110px
+            width 320px
+            height 70px
+            background #e74f4d
+            color #fff
+            font-size 30px
+            text-center()
+    
+    .list
+        width 100%
+        height 210px
+        overflow auto
+        
+        li
+            display inline-block
+            float left
+            width 25%
+            height @height
+            text-align center
+            position relative
+            
+            &:before
+                width 2px
+                height 50px
+                content ""
+                background #aba6a5
+                pos-abs(-1px,125px)
+                
+            &:first-child:before
+                display none
+            
+            img
+                margin 40px 0
+                
+            div
+                margin 0 20px
+                font-size 14px
+                font-family "黑体"
+                color #7f7e7e
+                
+#activity
+    .title
+        height 360px
+        padding-top 90px
+        box-sizing border-box
+        background #ededec
+        text-align center
+        
+        h1
+            margin 36px 0
+            font-family "黑体"
+            font-size 54px
+            color rgba(33,33,33,.5)
+    
+    .middle
+        width 100%
+        height 341px
+        background url("image/activity-bg.png")
+        background-size cover
+        
+        .mask
+            width 100%
+            height 100%
+            box-sizing border-box
+            background rgba(170,52,51,.2)
+            text-align center
+            color white
+            padding-top 40px
+                
+        h3
+            font-size 21px
+            margin-bottom 10px
+        
+        hr
+            width 28px
+            height 2px
+            border none
+            background white
+            margin-bottom 20px
+            
+        p
+            font-size 12px
+        
+        form
+            width 100%
+            
+            .select
+                display inline-block
+                position relative
+            
+            input
+                width 236px
+                height 36px
+                border none
+                margin 40px 15px
+            
+            .text-box
+                padding-left 10px
+                box-sizing border-box
+                font-size 12px
+                background white url("image/red-arrow.png") no-repeat
+                background-position 208px center
+                
+                &:focus
+                    outline none
+                    border 1px solid #be4e48
+                    
+                    &+ul
+                        visibility visible
+            
+            .button
+                background #be4e48
+                color white
+                font-size 14px
+                text-align center
+                cursor pointer
+            
+            ul
+                background #e3e3e4
+                border 1px solid #be4e48
+                width 236px
+                box-sizing border-box
+                visibility hidden
+                cursor pointer
+                pos-abs(15px,76px)
+                
+                li
+                    list-style-type none
+                    height 30px
+                    width 100%
+                    box-sizing border-box
+                    color #aba5a4
+                    padding-left 36px
+                    font-size 12px
+                    text-center(left)
+                    
+                    &:hover
+                        color white
+                        background #be4e48 url("image/check.png") no-repeat
+                        background-position 10px center
+                        
+    .bottom
+        width 100%
+        padding 100px 0
+        display flex
+        justify-content center
+        background #f7f7f7
+        
+        figure
+            height 396px
+            display flex
+            flex-direction column
+            justify-content space-between
+            margin 0 30px
+            
+            &~figure
+                margin-left 20px
+                
+            &:nth-child(2)
+                flex-direction column-reverse
+                
+                figcaption div:first-child
+                    font-size 24px
+                    margin 0
+                
+            img
+                padding 10px 6px
+                border 1px solid #e1dedc
+                background white
+                
+            figcaption
+                text-align center
+                
+                div:first-child
+                    font-family "黑体"
+                    font-size 14px
+                    margin 14px 0
+                    
+                div:last-child
+                    font-size 12px
+                    color #7f7773
