@@ -1,63 +1,175 @@
-html,body{
-	margin:0;
-	padding: 0;
+body {
+  margin: 0;
 }
-.container{
-	box-sizing: border-box;
-	padding: 10px;
+.wrapper {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
-/*清除浮动*/
-.row:before, 
-.row:after {
-    content:"";
-    display:table;
-    clear:both;
+.wrapper>div {
+  padding: 10px;
+  box-sizing: border-box;
 }
-/*给每个块添加基础样式*/
-[class*='col-']{
-	box-sizing: border-box;
-	float: left;
-	background-color: #eee;
-	border: 1px solid #999;
-	height: 50px;
-	margin: 10px; 
-	font-size: 12px;
-	text-align: center;
-	line-height: 50px;
+.wrapper .inner {
+  border: 1px solid #999;
+  background: #eee;
+  height: 50px;
+  position: relative;
 }
-/*大于768px*/
+.wrapper .inner:after {
+  color: #f00;
+  margin: 4px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 @media (min-width: 769px) {
-	.col-md-1{
-		width: calc( 8.333% - 20px );
-	}
-	.col-md-2{
-		width: calc( 16.666% - 20px );
-	}
-	.col-md-3{
-		width: calc( 25% - 20px );
-	}
-	.col-md-4{
-		width: calc( 33.333% - 20px );
-	}
-	.col-md-6{
-		width: calc( 50% - 20px );
-	}
+  .col-md-1 {
+    width: 8.333333333333334%;
+  }
+  .col-md-1 .inner:after {
+    content: " 1 ";
+  }
+  .col-md-2 {
+    width: 16.666666666666668%;
+  }
+  .col-md-2 .inner:after {
+    content: " 2 ";
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-3 .inner:after {
+    content: " 3 ";
+  }
+  .col-md-4 {
+    width: 33.333333333333336%;
+  }
+  .col-md-4 .inner:after {
+    content: " 4 ";
+  }
+  .col-md-5 {
+    width: 41.66666666666667%;
+  }
+  .col-md-5 .inner:after {
+    content: " 5 ";
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-6 .inner:after {
+    content: " 6 ";
+  }
+  .col-md-7 {
+    width: 58.333333333333336%;
+  }
+  .col-md-7 .inner:after {
+    content: " 7 ";
+  }
+  .col-md-8 {
+    width: 66.66666666666667%;
+  }
+  .col-md-8 .inner:after {
+    content: " 8 ";
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-9 .inner:after {
+    content: " 9 ";
+  }
+  .col-md-10 {
+    width: 83.33333333333334%;
+  }
+  .col-md-10 .inner:after {
+    content: " 10 ";
+  }
+  .col-md-11 {
+    width: 91.66666666666667%;
+  }
+  .col-md-11 .inner:after {
+    content: " 11 ";
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-12 .inner:after {
+    content: " 12 ";
+  }
 }
-/*小于768px*/
 @media (max-width: 768px) {
-	.col-sm-2{
-		width: calc( 16.666% - 20px );
-	}
-	.col-sm-3{
-		width: calc( 25% - 20px );
-	}
-	.col-sm-6{
-		width: calc( 50% - 20px );
-	}
-	.col-sm-8{
-		width: calc( 66.666% - 20px );
-	}
-	.col-sm-12{
-		width: calc( 100% - 20px );
-	}
+  .col-sm-1 {
+    width: 8.333333333333334%;
+  }
+  .col-sm-1 .inner:after {
+    content: " 1 ";
+  }
+  .col-sm-2 {
+    width: 16.666666666666668%;
+  }
+  .col-sm-2 .inner:after {
+    content: " 2 ";
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-3 .inner:after {
+    content: " 3 ";
+  }
+  .col-sm-4 {
+    width: 33.333333333333336%;
+  }
+  .col-sm-4 .inner:after {
+    content: " 4 ";
+  }
+  .col-sm-5 {
+    width: 41.66666666666667%;
+  }
+  .col-sm-5 .inner:after {
+    content: " 5 ";
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-6 .inner:after {
+    content: " 6 ";
+  }
+  .col-sm-7 {
+    width: 58.333333333333336%;
+  }
+  .col-sm-7 .inner:after {
+    content: " 7 ";
+  }
+  .col-sm-8 {
+    width: 66.66666666666667%;
+  }
+  .col-sm-8 .inner:after {
+    content: " 8 ";
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-9 .inner:after {
+    content: " 9 ";
+  }
+  .col-sm-10 {
+    width: 83.33333333333334%;
+  }
+  .col-sm-10 .inner:after {
+    content: " 10 ";
+  }
+  .col-sm-11 {
+    width: 91.66666666666667%;
+  }
+  .col-sm-11 .inner:after {
+    content: " 11 ";
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-12 .inner:after {
+    content: " 12 ";
+  }
 }

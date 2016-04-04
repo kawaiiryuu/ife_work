@@ -1,0 +1,46 @@
+cols=12
+spacing=20px
+
+body
+    margin 0
+
+.wrapper
+    width 100%
+    padding (spacing/2)
+    box-sizing border-box
+    display flex
+    flex-wrap wrap
+    
+    &>div
+        padding (spacing/2)
+        box-sizing border-box
+        
+    .inner
+        border 1px solid #999
+        background #eee
+        height 50px 
+        position relative
+        
+        &:after
+            color red
+            margin 4px
+            position absolute
+            right 0
+            top 0
+        
+@media (min-width:769px)
+    for i in 1..cols
+        .col-md-{i}
+            width (100/cols*i)%
+            
+            .inner:after
+                content \"i\"
+ 
+@media (max-width:768px)
+    for i in 1..cols
+        .col-sm-{i}
+            width (100/cols*i)%
+            
+            .inner:after
+                content \"i\"
+            

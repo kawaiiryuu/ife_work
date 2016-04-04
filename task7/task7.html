@@ -61,7 +61,7 @@
                 <h3>查找新世界城市活动信息</h3>
                 <hr>
                 <p>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
-                <form class="menu">
+                <form>
                     <input type="text" class="text-box" placeholder="中国">
                     <div class="select">
                         <input type="text" class="text-box" placeholder="省份">
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                     <input type="text" class="text-box" placeholder="城市">
-                    <input type="submit" class="button" value="搜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;索">
+                    <input type="submit" class="button" value="搜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;索">
                 </form>
             </div>
         </div>
@@ -90,7 +90,7 @@
             <figure>
                 <img src="image/activity-shanghai.png" alt="picture">
                 <figcaption>
-                    <div>上海活动</div>
+                    <div>上&nbsp;&nbsp;&nbsp;海&nbsp;&nbsp;&nbsp;活&nbsp;&nbsp;&nbsp;动</div>
                     <div>夜上海新景观探索</div>
                 </figcaption>
             </figure>
@@ -115,30 +115,42 @@
             <div class="title">
                 <h2>新世界</h2>
                 <h1>TIME</h1>
-                <p>@新世界-北京<br>2016.04.01</p>
+                <p>@新世界 - 北京<br>2016.04.01</p>
             </div>
             <div class="right">
-                <h3>新世界/<span>01</span></h3>
-                <p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
-                <a href="">更多详情</a>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
+                <div class="row">
+                    <a href="#" class="button">更多详情</a>
+                </div>
+                <input type="radio" id="radio-1" name="list" checked>
+                <input type="radio" id="radio-2" name="list">
+                <input type="radio" id="radio-3" name="list">
+                <div class="slide-1">
+                    <h3>新世界/<span>01</span></h3>
+                    <p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
+                </div>
+                <div class="slide-2">
+                    <h3>新世界/<span>02</span></h3>
+                    <p>新世界是个好世界新世界是个好世界新世界是个好世界新世界是个好世界新世界是个好世界新世界是个好世界新世界是个好世界新世界是个好世界新世界是个好世界新世界是个好世界新世界是个好世界</p>
+                </div>
+                <div class="slide-3">
+                    <h3>新世界/<span>03</span></h3>
+                    <p>好世界是个新世界好世界是个新世界好世界是个新世界好世界是个新世界好世界是个新世界好世界是个新世界好世界是个新世界好世界是个新世界好世界是个新世界好世界是个新世界好世界是个新世界</p>
+                </div>
             </div>
         </div>
         <div class="bottom">
             <div class="left">
-                <p>新时代关于爱生活的我们</p>
+                <p>新时代<br>关于爱生活的我们</p>
                 <hr>
-                <a href="">查看更多</a>
+                <a href="#" class="button">查看更多</a>
+            </div>
+            <div class="middle">
+                <p>新时代<br>关于爱生活的我们</p>
+                <hr>
+                <a href="#" class="button">查看更多</a>   
             </div>
             <div class="right">
-                <p>新时代关于爱生活的我们</p>
-                <hr>
-                <a href="">查看更多</a>
-                <img src="image/about-pic-2.png" alt="picture" class="right">
+                <div class="mask"></div>
             </div>
         </div>
     </section>
@@ -152,53 +164,49 @@
         </div>
         <div class="form">
             <div class="agreement">
-                <div>
+                <div class="article">
                     <h4>新世界志愿者协议</h4>
                     <p>加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，并且本着平等自愿的原则......</p>
                     <div class="more">more</div>
                 </div>
-                <div>
+                <div class="article">
                     <h4>新世界志愿者权利</h4>
                     <p>     新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在四新世界活动的优先参与资格</p>
                     <div class="more">more</div>
                 </div>
-                <div>
+                <div class="article">
                     <h4>更多条款</h4>
                     <div class="more">more</div>
                 </div>
             </div>
             <form>
-                <div><label for="">姓名：</label><input type="text" id=""></div>
-                <div><label for="">年龄：</label><input type="text" id=""></div>
-                <div><label for="">联系方式：</label><input type="text" id=""></div>
-                <div><label for="">联系地址：</label><input type="text" id=""></div>
-                <div>
-                    <label for="">请简单描述您梦想的生活：</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <input type="submit">
+                <input type="text" placeholder="姓名：" name="name">
+                <input type="text" placeholder="年龄：" name="age">
+                <input type="text" placeholder="联系方式：" name="contact">
+                <input type="text" placeholder="联系地址：" name="address">
+                <textarea name="description" cols="30" rows="10" placeholder="请简单描述您梦想的生活："></textarea>
+                <input type="submit" value="提交申请" class="button">
             </form>
         </div>
     </section>
     <footer>
         <div class="top">
             <h3>联系我们</h3>
-            <p>为了更好的获取我们的最新产品资讯，您可以留下您的电子邮箱快速订购我们的产品资讯
-也可以通过以下任何方式关注我们动态</p>
-            <form action="">
-                <input type="email" placeholder="someone@email.com">
-                <input type="submit" value="提交">
+            <p>为了更好的获取我们的最新产品资讯，您可以留下您的电子邮箱快速订购我们的产品资讯<br>也可以通过以下任何方式关注我们动态</p>
+            <form>
+                <input type="email" placeholder="someone@email.com" class="text-box">
+                <input type="submit" value="提交" class="button">
             </form>
             <ul>
-                <li><a href=""><img src="" alt="picture"></a></li>
-                <li><a href=""><img src="" alt="picture"></a></li>
-                <li><a href=""><img src="" alt="picture"></a></li>
-                <li><a href=""><img src="" alt="picture"></a></li>
+                <li><a href="#"><img src="image/contact-1.png" alt="picture"></a></li>
+                <li><a href="#"><img src="image/contact-2.png" alt="picture"></a></li>
+                <li><a href="#"><img src="image/contact-3.png" alt="picture"></a></li>
+                <li><a href="#"><img src="image/contact-4.png" alt="picture"></a></li>
             </ul>
         </div>
         <div class="bottom">
             <span class="left">@2016新世界</span>
-            <a class="right">Back to top</a>
+            <a href="#" class="right">Back to top</a>
         </div>
     </footer>
 </body>

@@ -8,10 +8,13 @@ pos-abs(l=0,t=0)
     left l
     top t
     
+size=30px
+    
     
 body
     margin 0
     font-family "微软雅黑"
+    min-width 1275px
     
 input
     font-family "微软雅黑"
@@ -19,16 +22,23 @@ input
 figure
     margin 0
     
+hr
+    border none
+    
 a
     text-decoration none
+    color inherit
     
-h1,h2,h3
+h1,h2,h3,h4
     font-weight normal
     margin 0
     
 ul
     margin 0
     padding 0
+    
+.button
+    cursor pointer
 
 header
     width 100%
@@ -67,7 +77,6 @@ header
                 display block
                 height @height
                 padding 0 20px
-                color inherit
                 font-size 14px
                 text-center()
             
@@ -177,7 +186,6 @@ header
         hr
             width 28px
             height 2px
-            border none
             background white
             margin-bottom 20px
             
@@ -216,7 +224,6 @@ header
                 color white
                 font-size 14px
                 text-align center
-                cursor pointer
             
             ul
                 background #e3e3e4
@@ -228,7 +235,7 @@ header
                 pos-abs(15px,76px)
                 
                 li
-                    list-style-type none
+                    list-style none
                     height 30px
                     width 100%
                     box-sizing border-box
@@ -255,9 +262,6 @@ header
             flex-direction column
             justify-content space-between
             margin 0 30px
-            
-            &~figure
-                margin-left 20px
                 
             &:nth-child(2)
                 flex-direction column-reverse
@@ -282,3 +286,383 @@ header
                 div:last-child
                     font-size 12px
                     color #7f7773
+                    
+#about
+    .top
+        width 100%
+        height 567px
+        display flex
+        
+        .title
+            flex 2 0 850px
+            background url("image/about-title.png") no-repeat
+            background-size cover
+            box-sizing border-box
+            padding-top 120px
+            color white
+            text-align center
+            
+            h2
+                font-size 50px
+                line-height 100%
+                
+            h1
+                font-size 158px
+                line-height 100%
+                
+            p
+                display inline-block
+                font-size 22px
+                text-align left
+                line-height 2em
+            
+        .right
+            flex 1 0 425px
+            text-align center
+            padding-top 150px
+            box-sizing border-box
+            position relative
+            display flex
+            flex-wrap wrap
+            justify-content center
+            
+            &:before
+                content ""
+                width 0
+                height 0
+                display block
+                position absolute
+                right 100%
+                top 50%
+                transform translateY(-50%)
+                border-top (size * 0.87) solid transparent
+                border-bottom (size * 0.87) solid transparent
+                border-right size solid white
+            
+            h3
+                font-size 22px
+                font-family "黑体"
+                
+                span
+                    color #e74f4d
+            
+            p
+                color #c7c6c6
+                font-family "宋体"
+                font-size 12px
+                display inline-block
+                width 300px
+                text-align left
+                line-height 2.5em
+                
+            .button
+                display block
+                width 100px
+                height 30px
+                text-decoration none
+                color #e46868
+                border 1px solid #e46868
+                box-shadow 0 0 1px #e46868
+                font-size 12px
+                margin 0 auto
+                text-center()
+                
+                &:hover
+                    background #e46868
+                    color white
+            
+            [class^="slide-"]
+                order -1
+                width 100%
+                
+            .row
+                width 100%
+                margin-top -50px
+                
+            input[type="radio"]
+                margin -74px 10px 0 10px
+                width 10px
+                height @width
+                position relative
+                cursor pointer
+                
+                &:after
+                    content ""
+                    display block
+                    width @width
+                    height @height
+                    background white
+                    border 1px solid gray
+                    border-radius 50%
+                    transform translate(-50%,-50%)
+                    pos-abs(50%,50%)
+                
+                &:checked:after
+                    background gray
+                        
+            input[type="radio"]:checked~[class^="slide-"]
+                display none
+                height @width
+            
+            for i in 1 2 3
+                input[type="radio"]:nth-of-type({i}):checked~.slide-{i}
+                    display block
+            
+    .bottom
+        width 100%
+        height 521px
+        display flex
+        
+        .left,.middle
+            text-align center
+            box-sizing border-box
+            padding-top 160px
+            font-size 21px
+            font-family "黑体"
+            
+            p
+                line-height 1.5em
+                
+            hr
+                width 20px
+                height 2px
+                
+            .button
+                text-decoration none
+                display block
+                margin 26px auto
+                width 160px
+                height 40px
+                text-center()
+                
+        
+        .left
+            flex 1 0 425px
+            background #e74f4d
+            color white
+            
+            hr
+                background white
+            
+            .button
+                border 1px solid white
+                color white
+                
+                &:hover
+                    background white
+                    color #e74f4d
+            
+        .middle
+            flex 1 0 425px
+            position relative
+            
+            &:before
+                content ""
+                width 0
+                height 0
+                display block
+                position absolute
+                left 100%
+                top 50%
+                transform translateY(-50%)
+                border-top (size * 0.87) solid transparent
+                border-bottom (size * 0.87) solid transparent
+                border-left size solid white
+            
+            hr
+                background #e74f4d
+            
+            .button
+                color #e74f4d
+                border 1px solid #e74f4d
+                
+                &:hover
+                    background #e74f4d
+                    color white
+            
+        .right
+            flex 1 0 425px
+            background url("image/about-pic-2.png") no-repeat
+            background-size cover
+            
+            .mask
+                width 100%
+                height @height
+                background rgba(0,0,0,.3)
+
+#volunteer
+    width 100%
+    height 800px
+    text-align center
+    
+    .title
+        width 100%
+        height 240px
+        box-sizing border-box
+        padding 120px
+        
+        h3
+            font-family "黑体"
+            font-size 21px
+            
+        hr
+            width 36px
+            height 2px
+            background #e74f4d
+            
+        p
+            font-size 12px
+            color #b6b5b5
+            line-height 1.5em
+            
+    .form
+        width 100%
+        padding-top 50px
+        box-sizing border-box
+        display flex
+        justify-content center
+        
+        .agreement
+            width 300px
+            height 320px
+            text-align left
+            display flex
+            flex-direction column
+            justify-content space-between
+            
+            .article
+                overflow auto
+            
+            h4
+                font-size 14px
+                font-family "黑体"
+                
+            p,.more
+                font-size 12px
+                font-family "宋体"
+                color #b6b5b5
+                
+            p
+                margin-top 2em
+                
+            .more
+                float right
+                cursor pointer
+                
+                &:before
+                    content "∨"
+                    font-family "微软雅黑"
+                    margin-right 8px
+            
+        form
+            width 700px
+            margin-left 80px
+            display flex
+            flex-wrap wrap
+            justify-content space-between
+            align-content space-between
+            
+            input,textarea
+                font-family "宋体"
+                font-size 12px
+                background #ededee
+                border none
+                box-sizing border-box
+                padding-left 16px
+            
+            input
+                height 40px
+            
+            input[type="text"]
+                width 340px
+                
+            textarea
+                width 100%
+                padding-top 12px
+                resize none
+                
+            .button
+                width 100%
+                font-family "黑体"
+                font-size 14px
+        
+footer
+    width 100%
+    height 400px
+    position relative
+    
+    .top
+        background #32353e
+        height 350px
+        text-align center
+        color white    
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        
+        h3
+            font-family "黑体"
+            font-size 21px
+        
+        p
+            width 470px
+            display inline-block
+            font-family "宋体"
+            font-size 12px
+            line-height 1.5em
+            
+        form
+            width 500px
+            display flex
+            margin 20px 0 30px
+            
+            input
+                height 40px
+                
+            .text-box
+                width 420px
+                background white
+                font-size 14px
+                color #abaaaa
+                box-sizing border-box
+                padding-left 12px
+                
+            .button
+                width 80px
+                background #686166
+                font-size 14px
+                font-family "黑体"
+                border none
+                box-sizing border-box
+                color white
+                    
+        ul
+            display flex
+            
+            li
+                list-style none
+                margin 0 18px      
+                
+                &:hover
+                    transform scale(0.9)
+    
+    .bottom
+        width 100%
+        height 50px
+        background #2f3038
+        position absolute
+        left 0
+        bottom 0
+        color white
+        font-size 12px
+        font-family "宋体"
+        line-height @height
+        box-sizing border-box
+        padding 0 100px
+        
+        .left
+            float left
+            
+        .right
+            float right

@@ -1,0 +1,33 @@
+body
+    margin 0
+    
+.wrapper
+    display flex
+    justify-content space-between
+    align-items center
+    
+[class^="box-"]
+    width 150px
+    margin 20px
+    border 1px solid #f00
+    
+.box-1
+    height 120px
+    
+.box-2
+    height 100px
+    
+.box-3
+    height 40px
+    
+.box-4
+    height 200px
+    border-color #00f
+       
+@media (max-width:640px)
+    .wrapper
+        align-items flex-start
+        flex-wrap wrap
+        
+    .box-4
+        order -1
