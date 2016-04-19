@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十三：零基础JavaScript编码（一）</title>
+</head>
+<body>
+    <label>这里可以输入东西：</label>
+    <input id="input" type="text">
+    <button id="button">确认填写</button>
+    <div>您输入的东西是：<span id="display">尚无输入</span></div>
+    <script type="text/javascript">
+        (function(){
+            var btn=document.getElementById("button");
+            btn.addEventListener("click",function(evt){
+                var input=document.getElementById("input");
+                var output=document.getElementById("display");
+                output.innerHTML=input.value?input.value:"尚无输入";
+            });
+        })();
+    </script>
+</body>
+</html>

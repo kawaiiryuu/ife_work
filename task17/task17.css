@@ -1,0 +1,78 @@
+@keyframes heightA{
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+*{
+    font-family: "微软雅黑";
+}
+
+#aqi-chart-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 600px;
+    padding: 0 60px;
+    overflow: hidden;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 24px;
+}
+
+.day{
+    width: 10px;
+}
+
+.week{
+    width: 80px;
+}
+
+.month{
+    width: 150px;
+}
+
+.bar{
+    position: relative;
+    animation: heightA ease .5s
+}
+
+.hint{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 44px;
+    box-shadow: 0 0 3px pink;
+    background: pink;
+    opacity: .8;
+    text-align: center;
+    display: none;
+    color: white;
+}
+
+.hint::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid pink;
+}
+
+.bar:hover{
+    z-index: 999;
+}
+
+.bar:hover>.hint{
+    display: block;
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十四：零基础JavaScript编码（二）</title>
+</head>
+<body>
+    <h1>污染城市列表</h1>
+    <ul id="aqi_list"></ul>
+    <script type="text/javascript">
+        (function(){
+            var ul=document.getElementById("aqi_list");
+            var data=[["北京",90],["上海",50],["福州",10],["广州",50],["成都",90],["西安",100]]; 
+            data.sort(function(a,b){return b[1]-a[1]});
+            for(var i=0;i<data.length;++i){
+                if(data[i][1]<=60)break;
+                var li=document.createElement("LI");
+                li.innerHTML="第"+(i+1)+"名："+data[i][0]+", "+data[i][1];
+                ul.appendChild(li);
+            }
+        })();
+    </script>
+</body>
+</html>

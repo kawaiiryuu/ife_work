@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十七：零基础JavaScript编码（五）</title>
+    <link rel="stylesheet" href="task17.css">
+    <script src="task17.js"></script>
+</head>
+<body onload="init()">
+    <fieldset id="form-gra-time">
+        <legend>请选择日期粒度：</legend>
+        <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+        <label>周<input name="gra-time" value="week" type="radio"></label>
+        <label>月<input name="gra-time" value="month" type="radio"></label>
+    </fieldset>
+    <fieldset>
+        <legend>请选择查看的城市：</legend>
+        <select id="city-select"></select>
+    </fieldset>
+    <figure>
+        <figcaption id="title"></figcaption>
+        <div id="aqi-chart-wrap"></div>
+    </figure>
+</body>
+</html>
